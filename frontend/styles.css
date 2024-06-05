@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open Sans";
+    background-color: azure;
+    overscroll-behavior: none;
+}
+
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#content {
+    width: 100%;
+}
+
+#canvas:active {
+    cursor: pointer;
+}
+
+input {
+    height: 25px;
+    width: 20%;
+    margin: 0 10px 20px 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    height: 25px;
+    background-color:green;
+    color: white;
+    margin: 15px 10px 15px 10px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+button:disabled,
+button:disabled:hover {
+    background-color: grey;
+    cursor: default;
+}
