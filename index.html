@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=0.5, user-scalable=0">
+    <title>Sketch Pad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <h1 id="heading">Want to draw something?</h1>
+        <input id="student" type="text" placeholder="Your Name">
+        <button id="advanceButton" onclick="start()">START</button>
+        <br>
+        <div id="sketchPadContainer" style="visibility: hidden"></div>
+    </div>
+    <script src="js/draw.js"></script>
+    <script src="js/sketchPad.js"></script>
+    <script>
+        const studentData = {
+            student: null,
+            session: new Date().getTime()
+        };
+
+        const SP = new sketchPad(sketchPadContainer);
+
+        function start() {
+            if (student.value == "") {
+                alert("Enter your name first.");
+                return;
+            }
+            studentData.student = student.value;
+            student.style.display = "none";
+            sketchPadContainer.style.visibility = "visible";
+            advanceButton.innerText = "DOWNLOAD";
+            advanceButton.disabled = true;
+            document.getElementById('heading').innerText = "There you go!";
+        }
+
+        // 'Download' feature, pencil colors and pencil sizes to be added.
+
+    </script>
+</body>
+</html>
