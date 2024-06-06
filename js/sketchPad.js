@@ -1,5 +1,5 @@
 class sketchPad {
-    constructor(container, height=400, width=600) {
+    constructor(container, height=500, width=600) {
         this.canvas = document.createElement("canvas");
         this.canvas.id = "canvas";
         this.canvas.width = width;

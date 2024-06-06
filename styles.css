@@ -4,6 +4,9 @@ body {
     font-family: "Open Sans";
     background-color: azure;
     overscroll-behavior: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #content {
@@ -18,13 +21,17 @@ body {
     width: 100%;
 }
 
+#canvas {
+    margin: 15px 0 10px 0;
+}
+
 #canvas:active {
     cursor: pointer;
 }
 
 input {
-    height: 25px;
-    width: 20%;
+    height: 30px;
+    width: 30%;
     margin: 0 10px 20px 10px;
     border-radius: 5px;
     border: 2px solid grey;
@@ -35,10 +42,11 @@ button {
     border: none;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
-    height: 25px;
+    height: 30px;
     background-color:green;
     color: white;
-    margin: 15px 10px 15px 10px;
+    margin: 0 15px 10px 15px;
+    text-align: center;
 }
 
 button:hover {
@@ -49,4 +57,12 @@ button:disabled,
 button:disabled:hover {
     background-color: grey;
     cursor: default;
+}
+
+button {
+    font-size: 17px;
+}
+
+h1 {
+    font-size: 40px;
 }
